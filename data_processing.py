@@ -87,7 +87,7 @@ if __name__ == "__main__":
     breeds = processing_data(directory=DATA_DIRECTORY, training_path='Training_path', testing_path='Testing_path')
     try:
         for breed in breeds:
-            train, test = train_test_split(DATA_DIRECTORY, breed, 0.8)
+            train, test = train_test_split(DATA_DIRECTORY, breed, 0.85)
             move_to_directories(DATA_DIRECTORY, breed, train, 'Training_path')
             move_to_directories(DATA_DIRECTORY, breed, test, 'Testing_path')
     except FileExistsError or NotADirectoryError as ee:
