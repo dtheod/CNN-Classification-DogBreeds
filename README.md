@@ -19,16 +19,21 @@ archive/
                           Afghan_hound/
                                         n02088094_1003.jpg
                                         n02088094_13011.jpg
+                                        ...
                           Scotch_terrier/
                                         n02097298_1007.jpg
                                         n02097298_15004.jpg
+                                        ...
           Testing_path/
                           Afghan_hound/
                                         n02088094_1023.jpg
                                         n02088094_1406.jpg
+                                        ...
                           Scotch_terrier/
                                         n02097298_2083.jpg
                                         n02097298_2998.jpg
+                                        ...
+                          ...
           croped_images/
           annotations/
           images/
