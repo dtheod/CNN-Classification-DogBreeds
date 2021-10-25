@@ -124,7 +124,7 @@ def keras_model(train_generator:object, validation_generator:object) -> Union[ob
                                 steps_per_epoch=len(train_generator), 
                                 validation_data=validation_generator, 
                                 validation_steps=len(validation_generator),
-                                epochs=1,
+                                epochs=10,
                                 callbacks=[model_check])
     return model, history
 
@@ -140,8 +140,10 @@ if __name__ == "__main__":
     train_generator, validation_generator = ImageGenerators(TRAINING_DIR, VALIDATION_DIR)
     model, history = keras_model(train_generator, validation_generator)
     model.save(os.path.join(os.getcwd(), 'artifacts/Dog_Breed_Classifier_New1.h5'))
+
+
     with open(os.path.join(os.getcwd(),'artifacts/history_model.pkl'), 'wb') as hist:
-        pickle.dump(history, hist)
+        pickle.dump(history.history, hist)
 
 
 
