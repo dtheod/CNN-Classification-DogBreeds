@@ -29,9 +29,9 @@ archive/
                           Scotch_terrier/
                                         n02097298_2083.jpg
                                         n02097298_2998.jpg
-croped_images/
-annotations/
-images/
+          croped_images/
+          annotations/
+          images/
 ```
 
 5. Now you have all the data structured to run the keras script. Run the below
